@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>index.knit</title>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/spacelab.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.tab('show');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Poseidon published data repository</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-list"></span>
+     
+    Package list
+  </a>
+</li>
+<li>
+  <a href="https://github.com/poseidon-framework/published_data">
+    <span class="fa fa-github"></span>
+     
+    Package repository
+  </a>
+</li>
+<li>
+  <a href="https://poseidon-framework.github.io">
+    <span class="fa fa-globe"></span>
+     
+    Poseidon website
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<table>
+<thead>
+<tr class="header">
+<th align="right"># Individuals</th>
+<th align="left">Package</th>
+<th align="left">View link</th>
+<th align="left">Download link</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2010_RasmussenNature</td>
+<td align="left"><a href="2010_RasmussenNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2010_RasmussenNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2012_KellerNatureCommunications</td>
+<td align="left"><a href="2012_KellerNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2012_KellerNatureCommunications">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">6</td>
+<td align="left">2012_MeyerScience</td>
+<td align="left"><a href="2012_MeyerScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2012_MeyerScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1036</td>
+<td align="left">2012_PattersonGenetics</td>
+<td align="left"><a href="2012_PattersonGenetics.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2012_PattersonGenetics">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">2012_PickrellNatureCommunications</td>
+<td align="left"><a href="2012_PickrellNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2012_PickrellNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2014_FuNature</td>
+<td align="left"><a href="2014_FuNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_FuNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="left">2014_GambaNatureCommunications</td>
+<td align="left"><a href="2014_GambaNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_GambaNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1222</td>
+<td align="left">2014_LazaridisNature</td>
+<td align="left"><a href="2014_LazaridisNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_LazaridisNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">2</td>
+<td align="left">2014_MalaspinasCurrentBiology</td>
+<td align="left"><a href="2014_MalaspinasCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_MalaspinasCurrentBiology">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2014_OlaldeNature</td>
+<td align="left"><a href="2014_OlaldeNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_OlaldeNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">6</td>
+<td align="left">2014_RaghavanNature</td>
+<td align="left"><a href="2014_RaghavanNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_RaghavanNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">2014_RaghavanScience</td>
+<td align="left"><a href="2014_RaghavanScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_RaghavanScience">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">2014_RasmussenNature</td>
+<td align="left"><a href="2014_RasmussenNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_RasmussenNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2014_SeguinOrlandoScience</td>
+<td align="left"><a href="2014_SeguinOrlandoScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_SeguinOrlandoScience">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">2014_SkoglundScience</td>
+<td align="left"><a href="2014_SkoglundScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2014_SkoglundScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">2535</td>
+<td align="left">2015_1000Genomes_1240K_haploid_pulldown</td>
+<td align="left"><a href="2015_1000Genomes_1240K_haploid_pulldown.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_1000Genomes_1240K_haploid_pulldown">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">98</td>
+<td align="left">2015_AllentoftNature</td>
+<td align="left"><a href="2015_AllentoftNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_AllentoftNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">2015_CassidyPNAS</td>
+<td align="left"><a href="2015_CassidyPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_CassidyPNAS">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2015_FuNature</td>
+<td align="left"><a href="2015_FuNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_FuNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">5</td>
+<td align="left">2015_GuntherPNAS</td>
+<td align="left"><a href="2015_GuntherPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_GuntherPNAS">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">2015_JonesNatureCommunications</td>
+<td align="left"><a href="2015_JonesNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_JonesNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2015_LlorenteScience</td>
+<td align="left"><a href="2015_LlorenteScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_LlorenteScience">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">142</td>
+<td align="left">2015_MathiesonNature</td>
+<td align="left"><a href="2015_MathiesonNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_MathiesonNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2015_OlaldeMBE</td>
+<td align="left"><a href="2015_OlaldeMBE.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_OlaldeMBE">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">23</td>
+<td align="left">2015_RaghavanScience</td>
+<td align="left"><a href="2015_RaghavanScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_RaghavanScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2015_RasmussenNature</td>
+<td align="left"><a href="2015_RasmussenNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2015_RasmussenNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">2016_BroushakiScience</td>
+<td align="left"><a href="2016_BroushakiScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_BroushakiScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">40</td>
+<td align="left">2016_FuNature</td>
+<td align="left"><a href="2016_FuNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_FuNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">2016_HofmanovaPNAS</td>
+<td align="left"><a href="2016_HofmanovaPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_HofmanovaPNAS">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="left">2016_JeongPNAS</td>
+<td align="left"><a href="2016_JeongPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_JeongPNAS">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">2016_KanzawaJHG</td>
+<td align="left"><a href="2016_KanzawaJHG.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_KanzawaJHG">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">9</td>
+<td align="left">2016_KilincCurrentBiology</td>
+<td align="left"><a href="2016_KilincCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_KilincCurrentBiology">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">169</td>
+<td align="left">2016_LazaridisNature</td>
+<td align="left"><a href="2016_LazaridisNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_LazaridisNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">280</td>
+<td align="left">2016_Mallick_SGDP1240K_diploid_pulldown</td>
+<td align="left"><a href="2016_Mallick_SGDP1240K_diploid_pulldown.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_Mallick_SGDP1240K_diploid_pulldown">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">9</td>
+<td align="left">2016_MartinianoNatureCommunications</td>
+<td align="left"><a href="2016_MartinianoNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_MartinianoNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">70</td>
+<td align="left">2016_MondalNatureGenetics</td>
+<td align="left"><a href="2016_MondalNatureGenetics.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_MondalNatureGenetics">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">2</td>
+<td align="left">2016_OmrakCurrentBiology</td>
+<td align="left"><a href="2016_OmrakCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_OmrakCurrentBiology">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">2016_SchiffelsNatureCommunications</td>
+<td align="left"><a href="2016_SchiffelsNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_SchiffelsNatureCommunications">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">74</td>
+<td align="left">2016_SkoglundNature</td>
+<td align="left"><a href="2016_SkoglundNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2016_SkoglundNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="left">2017_GonzalesFortesCurrentBiology</td>
+<td align="left"><a href="2017_GonzalesFortesCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_GonzalesFortesCurrentBiology">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">2017_HaberAJHG</td>
+<td align="left"><a href="2017_HaberAJHG.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_HaberAJHG">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">8</td>
+<td align="left">2017_JonesCurrentBiology</td>
+<td align="left"><a href="2017_JonesCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_JonesCurrentBiology">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">2017_KennettNatureCommunications</td>
+<td align="left"><a href="2017_KennettNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_KennettNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="left">2017_LazaridisNature</td>
+<td align="left"><a href="2017_LazaridisNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_LazaridisNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2017_LindoPNAS</td>
+<td align="left"><a href="2017_LindoPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_LindoPNAS">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">138</td>
+<td align="left">2017_LipsonNature</td>
+<td align="left"><a href="2017_LipsonNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_LipsonNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">14</td>
+<td align="left">2017_MartinianoPLoSGenetics</td>
+<td align="left"><a href="2017_MartinianoPLoSGenetics.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_MartinianoPLoSGenetics">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2017_PrueferScience</td>
+<td align="left"><a href="2017_PrueferScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_PrueferScience">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">5</td>
+<td align="left">2017_RodriguezVarelaCurrentBiology</td>
+<td align="left"><a href="2017_RodriguezVarelaCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_RodriguezVarelaCurrentBiology">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">2017_SaagCurrentBiology</td>
+<td align="left"><a href="2017_SaagCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_SaagCurrentBiology">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="left">2017_SchlebuschScience</td>
+<td align="left"><a href="2017_SchlebuschScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_SchlebuschScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">3</td>
+<td align="left">2017_Schuenemann_EgyptianMummies</td>
+<td align="left"><a href="2017_Schuenemann_EgyptianMummies.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_Schuenemann_EgyptianMummies">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">7</td>
+<td align="left">2017_SikoraScience</td>
+<td align="left"><a href="2017_SikoraScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_SikoraScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">59</td>
+<td align="left">2017_SkoglundCell</td>
+<td align="left"><a href="2017_SkoglundCell.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_SkoglundCell">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">8</td>
+<td align="left">2017_UnterlanderNatureCommunications</td>
+<td align="left"><a href="2017_UnterlanderNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_UnterlanderNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2017_VanDenBrink</td>
+<td align="left"><a href="2017_VanDenBrink.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_VanDenBrink">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">93</td>
+<td align="left">2017_VyasAJPA</td>
+<td align="left"><a href="2017_VyasAJPA.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_VyasAJPA">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2017_YangCurrentBiology</td>
+<td align="left"><a href="2017_YangCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2017_YangCurrentBiology">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">63</td>
+<td align="left">2018_AmorimNatureCommunications</td>
+<td align="left"><a href="2018_AmorimNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_AmorimNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">137</td>
+<td align="left">2018_DamgaardNature</td>
+<td align="left"><a href="2018_DamgaardNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_DamgaardNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">111</td>
+<td align="left">2018_DamgaardScience</td>
+<td align="left"><a href="2018_DamgaardScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_DamgaardScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">2018_delaFuentePNAS</td>
+<td align="left"><a href="2018_delaFuentePNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_delaFuentePNAS">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">27</td>
+<td align="left">2018_Ebenesersdottir_Iceland</td>
+<td align="left"><a href="2018_Ebenesersdottir_Iceland.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_Ebenesersdottir_Iceland">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">17</td>
+<td align="left">2018_FernandesScientificReports</td>
+<td align="left"><a href="2018_FernandesScientificReports.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_FernandesScientificReports">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">12</td>
+<td align="left">2018_FregelPNAS</td>
+<td align="left"><a href="2018_FregelPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_FregelPNAS">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">2018_GuntherPLoSBiology</td>
+<td align="left"><a href="2018_GuntherPLoSBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_GuntherPLoSBiology">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">22</td>
+<td align="left">2018_HarneyMayNatureCommunications</td>
+<td align="left"><a href="2018_HarneyMayNatureCommunications.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_HarneyMayNatureCommunications">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">20</td>
+<td align="left">2018_Jeong_EurasianSteppe</td>
+<td align="left"><a href="2018_Jeong_EurasianSteppe.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_Jeong_EurasianSteppe">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">23</td>
+<td align="left">2018_KrzewinskaCurrentBiology</td>
+<td align="left"><a href="2018_KrzewinskaCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_KrzewinskaCurrentBiology">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">35</td>
+<td align="left">2018_KrzewinskaScienceAdvances</td>
+<td align="left"><a href="2018_KrzewinskaScienceAdvances.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_KrzewinskaScienceAdvances">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">16</td>
+<td align="left">2018_Lamnidis_Fennoscandia</td>
+<td align="left"><a href="2018_Lamnidis_Fennoscandia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_Lamnidis_Fennoscandia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">2018_LindoScienceAdvances</td>
+<td align="left"><a href="2018_LindoScienceAdvances.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_LindoScienceAdvances">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">22</td>
+<td align="left">2018_LipsonCurrentBiology</td>
+<td align="left"><a href="2018_LipsonCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_LipsonCurrentBiology">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">25</td>
+<td align="left">2018_LipsonScience</td>
+<td align="left"><a href="2018_LipsonScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_LipsonScience">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">226</td>
+<td align="left">2018_MathiesonNature</td>
+<td align="left"><a href="2018_MathiesonNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_MathiesonNature">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">28</td>
+<td align="left">2018_McCollScience</td>
+<td align="left"><a href="2018_McCollScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_McCollScience">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">39</td>
+<td align="left">2018_Mittnik_Baltic</td>
+<td align="left"><a href="2018_Mittnik_Baltic.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_Mittnik_Baltic">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2018_MorenoMayarNature</td>
+<td align="left"><a href="2018_MorenoMayarNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_MorenoMayarNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">17</td>
+<td align="left">2018_MorenoMayarScience</td>
+<td align="left"><a href="2018_MorenoMayarScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_MorenoMayarScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">398</td>
+<td align="left">2018_OlaldeNature</td>
+<td align="left"><a href="2018_OlaldeNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_OlaldeNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">50</td>
+<td align="left">2018_Posth_SouthAmerica</td>
+<td align="left"><a href="2018_Posth_SouthAmerica.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_Posth_SouthAmerica">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">19</td>
+<td align="left">2018_PosthNatureEcologyEvolution</td>
+<td align="left"><a href="2018_PosthNatureEcologyEvolution.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_PosthNatureEcologyEvolution">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">75</td>
+<td align="left">2018_ScheibScience</td>
+<td align="left"><a href="2018_ScheibScience.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_ScheibScience">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2018_SchroederPNAS</td>
+<td align="left"><a href="2018_SchroederPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_SchroederPNAS">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">2018_ValdioseraPNAS</td>
+<td align="left"><a href="2018_ValdioseraPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_ValdioseraPNAS">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">2018_VanDeLoosdrecht_Morrocco</td>
+<td align="left"><a href="2018_VanDeLoosdrecht_Morrocco.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_VanDeLoosdrecht_Morrocco">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">41</td>
+<td align="left">2018_VeeramahPNAS</td>
+<td align="left"><a href="2018_VeeramahPNAS.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_VeeramahPNAS">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2018_Zalloua_Phoenician</td>
+<td align="left"><a href="2018_Zalloua_Phoenician.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2018_Zalloua_Phoenician">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">134</td>
+<td align="left">2019_Antonio_AncientRome</td>
+<td align="left"><a href="2019_Antonio_AncientRome.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Antonio_AncientRome">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">120</td>
+<td align="left">2019_Biagini_Spain</td>
+<td align="left"><a href="2019_Biagini_Spain.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Biagini_Spain">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">56</td>
+<td align="left">2019_Brace_Britain</td>
+<td align="left"><a href="2019_Brace_Britain.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Brace_Britain">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">14</td>
+<td align="left">2019_BraceNatureEcologyEvolution</td>
+<td align="left"><a href="2019_BraceNatureEcologyEvolution.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_BraceNatureEcologyEvolution">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">8</td>
+<td align="left">2019_Feldman_Anatolia</td>
+<td align="left"><a href="2019_Feldman_Anatolia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Feldman_Anatolia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">10</td>
+<td align="left">2019_Feldman_Philistines</td>
+<td align="left"><a href="2019_Feldman_Philistines.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Feldman_Philistines">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">107</td>
+<td align="left">2019_Flegontov_PalaeoEskimo</td>
+<td align="left"><a href="2019_Flegontov_PalaeoEskimo.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Flegontov_PalaeoEskimo">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">4</td>
+<td align="left">2019_GonzalesFortes_Iberia</td>
+<td align="left"><a href="2019_GonzalesFortes_Iberia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_GonzalesFortes_Iberia">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">13</td>
+<td align="left">2019_Haber_Crusaders</td>
+<td align="left"><a href="2019_Haber_Crusaders.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Haber_Crusaders">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">38</td>
+<td align="left">2019_Harney_LakeRoopkund</td>
+<td align="left"><a href="2019_Harney_LakeRoopkund.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Harney_LakeRoopkund">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">31</td>
+<td align="left">2019_Jarve_Scythian</td>
+<td align="left"><a href="2019_Jarve_Scythian.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Jarve_Scythian">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">765</td>
+<td align="left">2019_Jeong_InnerEurasia</td>
+<td align="left"><a href="2019_Jeong_InnerEurasia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Jeong_InnerEurasia">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">2019_Malmstrom_Scandinavia</td>
+<td align="left"><a href="2019_Malmstrom_Scandinavia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Malmstrom_Scandinavia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">118</td>
+<td align="left">2019_Mittnik_BAEurope</td>
+<td align="left"><a href="2019_Mittnik_BAEurope.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Mittnik_BAEurope">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">542</td>
+<td align="left">2019_Narasimhan_centralSouthAsia</td>
+<td align="left"><a href="2019_Narasimhan_centralSouthAsia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Narasimhan_centralSouthAsia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2019_Nikitin_LBK</td>
+<td align="left"><a href="2019_Nikitin_LBK.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Nikitin_LBK">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">2019_Ning_Tianshan</td>
+<td align="left"><a href="2019_Ning_Tianshan.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Ning_Tianshan">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">277</td>
+<td align="left">2019_Olalde_Iberia</td>
+<td align="left"><a href="2019_Olalde_Iberia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Olalde_Iberia">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">43</td>
+<td align="left">2019_Prendergast_EastAfrica</td>
+<td align="left"><a href="2019_Prendergast_EastAfrica.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Prendergast_EastAfrica">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">56</td>
+<td align="left">2019_Saag_EasternBaltic</td>
+<td align="left"><a href="2019_Saag_EasternBaltic.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Saag_EasternBaltic">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">26</td>
+<td align="left">2019_SanchezQuinto_Megalithic</td>
+<td align="left"><a href="2019_SanchezQuinto_Megalithic.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_SanchezQuinto_Megalithic">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">24</td>
+<td align="left">2019_Schroeder_Poland</td>
+<td align="left"><a href="2019_Schroeder_Poland.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Schroeder_Poland">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">1</td>
+<td align="left">2019_Shinde_Harappan</td>
+<td align="left"><a href="2019_Shinde_Harappan.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Shinde_Harappan">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">31</td>
+<td align="left">2019_Sikora_NorthEastSiberia</td>
+<td align="left"><a href="2019_Sikora_NorthEastSiberia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Sikora_NorthEastSiberia">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">11</td>
+<td align="left">2019_Villalba_Iberia</td>
+<td align="left"><a href="2019_Villalba_Iberia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Villalba_Iberia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">49</td>
+<td align="left">2019_Wang_Caucasus</td>
+<td align="left"><a href="2019_Wang_Caucasus.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2019_Wang_Caucasus">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">73</td>
+<td align="left">2020_AgranatTamir_LevantBA</td>
+<td align="left"><a href="2020_AgranatTamir_LevantBA.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_AgranatTamir_LevantBA">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">3</td>
+<td align="left">2020_BarqueraCurrentBiology</td>
+<td align="left"><a href="2020_BarqueraCurrentBiology.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_BarqueraCurrentBiology">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">929</td>
+<td align="left">2020_Bergstrom_HGDP</td>
+<td align="left"><a href="2020_Bergstrom_HGDP.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Bergstrom_HGDP">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">6</td>
+<td align="left">2020_Bongers_SouthPeru</td>
+<td align="left"><a href="2020_Bongers_SouthPeru.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Bongers_SouthPeru">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">58</td>
+<td align="left">2020_Brunel_France</td>
+<td align="left"><a href="2020_Brunel_France.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Brunel_France">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">42</td>
+<td align="left">2020_Cassidy_IrishDynastic</td>
+<td align="left"><a href="2020_Cassidy_IrishDynastic.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Cassidy_IrishDynastic">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">174</td>
+<td align="left">2020_Fernandes_Caribbean</td>
+<td align="left"><a href="2020_Fernandes_Caribbean.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Fernandes_Caribbean">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">62</td>
+<td align="left">2020_Fernandes_westernMediterranean</td>
+<td align="left"><a href="2020_Fernandes_westernMediterranean.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Fernandes_westernMediterranean">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">96</td>
+<td align="left">2020_Furtwaengler_Switzerland</td>
+<td align="left"><a href="2020_Furtwaengler_Switzerland.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Furtwaengler_Switzerland">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">19</td>
+<td align="left">2020_Haber_NearEast</td>
+<td align="left"><a href="2020_Haber_NearEast.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Haber_NearEast">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="left">2020_Immel_Moldova</td>
+<td align="left"><a href="2020_Immel_Moldova.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Immel_Moldova">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">194</td>
+<td align="left">2020_Jeong_EurasiaEasternSteppe</td>
+<td align="left"><a href="2020_Jeong_EurasiaEasternSteppe.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Jeong_EurasiaEasternSteppe">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">19</td>
+<td align="left">2020_Linderholm_Poland</td>
+<td align="left"><a href="2020_Linderholm_Poland.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Linderholm_Poland">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">7</td>
+<td align="left">2020_Lipson_WestAfrica</td>
+<td align="left"><a href="2020_Lipson_WestAfrica.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Lipson_WestAfrica">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">70</td>
+<td align="left">2020_Marcus_Sardinia</td>
+<td align="left"><a href="2020_Marcus_Sardinia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Marcus_Sardinia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">442</td>
+<td align="left">2020_Margaryan_Viking</td>
+<td align="left"><a href="2020_Margaryan_Viking.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Margaryan_Viking">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">93</td>
+<td align="left">2020_Nagele_Caribbean</td>
+<td align="left"><a href="2020_Nagele_Caribbean.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Nagele_Caribbean">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">61</td>
+<td align="left">2020_Nakatsuka_Andes</td>
+<td align="left"><a href="2020_Nakatsuka_Andes.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Nakatsuka_Andes">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">20</td>
+<td align="left">2020_Nakatsuka_SouthPatagonia</td>
+<td align="left"><a href="2020_Nakatsuka_SouthPatagonia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Nakatsuka_SouthPatagonia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">2</td>
+<td align="left">2020_NievesColon_PuertoRico</td>
+<td align="left"><a href="2020_NievesColon_PuertoRico.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_NievesColon_PuertoRico">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">55</td>
+<td align="left">2020_Ning_China</td>
+<td align="left"><a href="2020_Ning_China.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Ning_China">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">101</td>
+<td align="left">2020_Rivollat_FranceGermany</td>
+<td align="left"><a href="2020_Rivollat_FranceGermany.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Rivollat_FranceGermany">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">110</td>
+<td align="left">2020_Skourtanioti_NearEast</td>
+<td align="left"><a href="2020_Skourtanioti_NearEast.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Skourtanioti_NearEast">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">3</td>
+<td align="left">2020_TeschlerNicola_UpperPaleoTwin</td>
+<td align="left"><a href="2020_TeschlerNicola_UpperPaleoTwin.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_TeschlerNicola_UpperPaleoTwin">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">20</td>
+<td align="left">2020_Wang_subSaharanAfrica</td>
+<td align="left"><a href="2020_Wang_subSaharanAfrica.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Wang_subSaharanAfrica">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">24</td>
+<td align="left">2020_Yang_China</td>
+<td align="left"><a href="2020_Yang_China.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Yang_China">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">19</td>
+<td align="left">2020_Yu_NorthRussia</td>
+<td align="left"><a href="2020_Yu_NorthRussia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2020_Yu_NorthRussia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">1</td>
+<td align="left">2021_CarlhoffNature</td>
+<td align="left"><a href="2021_CarlhoffNature.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_CarlhoffNature">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">28</td>
+<td align="left">2021_Freilich_Croatia</td>
+<td align="left"><a href="2021_Freilich_Croatia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_Freilich_Croatia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">117</td>
+<td align="left">2021_GnecchiRuscone_KazakhSteppe</td>
+<td align="left"><a href="2021_GnecchiRuscone_KazakhSteppe.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_GnecchiRuscone_KazakhSteppe">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">40</td>
+<td align="left">2021_Kilinc_northeastAsia</td>
+<td align="left"><a href="2021_Kilinc_northeastAsia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_Kilinc_northeastAsia">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">283</td>
+<td align="left">2021_Papac_CentralEurope</td>
+<td align="left"><a href="2021_Papac_CentralEurope.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_Papac_CentralEurope">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">47</td>
+<td align="left">2021_Saag_EastEuropean</td>
+<td align="left"><a href="2021_Saag_EastEuropean.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_Saag_EastEuropean">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">574</td>
+<td align="left">2021_Wang_EastAsia</td>
+<td align="left"><a href="2021_Wang_EastAsia.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_Wang_EastAsia">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">24</td>
+<td align="left">2021_Zegarac_SoutheasternEurope</td>
+<td align="left"><a href="2021_Zegarac_SoutheasternEurope.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/2021_Zegarac_SoutheasternEurope">Download</a></td>
+</tr>
+<tr class="even">
+<td align="right">12</td>
+<td align="left">Archaic_Humans</td>
+<td align="left"><a href="Archaic_Humans.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/Archaic_Humans">Download</a></td>
+</tr>
+<tr class="odd">
+<td align="right">4</td>
+<td align="left">Reference_Genomes</td>
+<td align="left"><a href="Reference_Genomes.html">View</a></td>
+<td align="left"><a href="http://c107-224.cloud.gwdg.de:3000/zip_file/Reference_Genomes">Download</a></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
