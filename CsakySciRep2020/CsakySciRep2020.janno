@@ -1,0 +1,2 @@
+Poseidon_ID	Genetic_Sex	Group_Name	Collection_ID	Country	Location	Latitude	Longitude	Date_Type	Date_BC_AD_Start	Date_BC_AD_Median	Date_BC_AD_Stop	Nr_Libraries	Capture_Type	Library_Built	Genotype_Ploidy	Nr_SNPs	Coverage_on_Target_SNPs	Genetic_Source_Accession_IDs	Publication
+MS20.SG	U	Russia_KusnarenkovoKarajakupovo_Medieval.SG	K11/5	Russia	Trans-Ural, Chelyabinsk, Uyelgi	55.84855	61.55211	contextual	800	850	900	1	OtherCapture	ds	diploid	860782	1.660097	PRJEB39054	CsakySciRep2020
