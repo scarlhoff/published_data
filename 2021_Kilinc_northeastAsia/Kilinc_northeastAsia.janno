@@ -1,41 +1,41 @@
-Poseidon_ID	Genetic_Sex	Group_Name	Publication
-bla001	M	bla001	KilincScienceAdvances2021
-brn001	F	brn001	KilincScienceAdvances2021
-brn002	M	brn002	KilincScienceAdvances2021
-brn003	M	brn003	KilincScienceAdvances2021
-brn008	M	brn008	KilincScienceAdvances2021
-brn012	F	brn012	KilincScienceAdvances2021
-cta016	F	cta016	KilincScienceAdvances2021
-irk007	M	irk007	KilincScienceAdvances2021
-irk008	F	irk008	KilincScienceAdvances2021
-irk00x	M	irk00x	KilincScienceAdvances2021
-irk017	F	irk017	KilincScienceAdvances2021
-irk022	M	irk022	KilincScienceAdvances2021
-irk025	M	irk025	KilincScienceAdvances2021
-irk030	M	irk030	KilincScienceAdvances2021
-irk032	M	irk032	KilincScienceAdvances2021
-irk033	M	irk033	KilincScienceAdvances2021
-irk034	M	irk034	KilincScienceAdvances2021
-irk036	M	irk036	KilincScienceAdvances2021
-irk040	M	irk040	KilincScienceAdvances2021
-irk050	F	irk050	KilincScienceAdvances2021
-irk051	F	irk051	KilincScienceAdvances2021
-irk057	M	irk057	KilincScienceAdvances2021
-irk061	M	irk061	KilincScienceAdvances2021
-irk068	M	irk068	KilincScienceAdvances2021
-irk071	M	irk071	KilincScienceAdvances2021
-irk075	M	irk075	KilincScienceAdvances2021
-irk076	M	irk076	KilincScienceAdvances2021
-irk078	F	irk078	KilincScienceAdvances2021
-kra001	M	kra001	KilincScienceAdvances2021
-mak026	F	mak026	KilincScienceAdvances2021
-N2a	F	N2a	KilincScienceAdvances2021
-N4a1	M	N4a1	KilincScienceAdvances2021
-N4b2	M	N4b2	KilincScienceAdvances2021
-N5a	M	N5a	KilincScienceAdvances2021
-yak021	F	yak021	KilincScienceAdvances2021
-yak022	F	yak022	KilincScienceAdvances2021
-yak023	F	yak023	KilincScienceAdvances2021
-yak024	F	yak024	KilincScienceAdvances2021
-yak025	F	yak025	KilincScienceAdvances2021
-Yak030	M	Yak030	KilincScienceAdvances2021
+Poseidon_ID	Genetic_Sex	Group_Name	Collection_ID	Country	Location	Latitude	Longitude	Date_Type	Date_C14_Labnr	Date_C14_Uncal_BP	Date_C14_Uncal_BP_Err	Date_BC_AD_Start	Date_BC_AD_Median	Date_BC_AD_Stop	MT_Haplogroup	Source_Tissue	Nr_Libraries	Capture_Type	UDG	Library_Built	Genotype_Ploidy	Nr_SNPs	Coverage_on_Target_SNPs	Genetic_Source_Accession_IDs	Publication
+bla001.SG	M	Russia_Blagovechensk_IA.SG	bla001	Russia	Far Eastern Federal District, Amur Oblast, Blagovechensk, Oktyabr'skoe	49.6731	127.885	C14	Beta-453077	1380	30	601	680	758	D4e4a	tooth	2	Shotgun	minus	ds	diploid	458065	0.494446	PRJEB39378	KilincSciAdv2021
+brn001.SG	F	Russia_KuengaRiver_N_1.SG	brn001	Russia	Siberian Federal District, Trans-Baikal, Kuenga River, Izvestkovaja-1 site	52.2308	116.9933	C14	Beta-453071	6400	30	-5474	-5393	-5312	A	tooth	2	Shotgun	minus	ds	diploid	75389	0.066664	PRJEB39378	KilincSciAdv2021
+brn002.SG	M	Russia_AginBuryat_N.SG	brn002	Russia	Siberian Federal District, Trans-Baikal, Agin-Buryat Autonomous Okrug, Nozhyj Lake burial site-2	50.8158	114.8367	C14	Beta-453072	5270	30	-4233	-4110	-3987	D2a'b	tooth	2	Shotgun	minus	ds	diploid	254892	0.24251	PRJEB39378	KilincSciAdv2021
+brn003.SG	M	Russia_KadalinkaRiver_N.SG	brn003	Russia	Siberian Federal District, Trans-Baikal, Kadalinka River, Dvorcy-Dacha burial	52.0742	113.2139	C14	Beta-453073	5750	30	-4691	-4596	-4502	D4	tooth	5	Shotgun	mixed	ds	diploid	1073016	2.690225	PRJEB39378	KilincSciAdv2021
+brn008.SG	M	Russia_KuengaRiver_N_2.SG	brn008	Russia	Siberian Federal District, Trans-Baikal, Kuenga River, Izvestkovaja-1 site	52.2308	116.9933	C14	Beta-453075	6490	30	-5516	-5445	-5374	D4	tooth	5	Shotgun	mixed	ds	diploid	1001896	2.102712	PRJEB39378	KilincSciAdv2021
+brn012.SG	F	Russia_AginBuryat_N.SG	brn012	Russia	Siberian Federal District, Trans-Baikal, Agin-Buryat Autonomous Okrug, Nozhyj Lake burial site-1	50.8158	114.8367	C14	Beta-453076	5340	30	-4320	-4186	-4052	D4b1a2	tooth	2	Shotgun	minus	ds	diploid	161447	0.148394	PRJEB39378	KilincSciAdv2021
+cta016.SG	F	Russia_ArgunRiver_M.SG	cta016	Russia	Siberian Federal District, Trans-Baikal, Argun River, Western Hill, Mt. Bolishaja Kanga, Duroj	50.0171	118.9395	C14	Beta-453084	7440	30	-6392	-6314	-6237	G2a1	tooth	6	Shotgun	mixed	ds	diploid	1124242	4.027825	PRJEB39378	KilincSciAdv2021
+irk007.SG	M	Russia_LenaRiver_EN.SG	Popovskij-1	Russia	Siberian Federal District, Cis-Baikal, Lena River, Popovskij Lug site	53.9867	105.8477	C14	Beta-432246	7940	30	-7035	-6863	-6691	F1b	tooth	8	Shotgun	mixed	ds	diploid	959291	1.781705	PRJEB39378	KilincSciAdv2021
+irk008.SG	F	Russia_LenaRiver_BA.SG	irk008	Russia	Siberian Federal District, Cis-Baikal, Lena River, Silinskij burial site	54.0027	105.7103	C14	Beta-453086	3520	30	-1931	-1840	-1749	C4a1a	tooth	2	Shotgun	minus	ds	diploid	168074	0.154251	PRJEB39378	KilincSciAdv2021
+irk00x.SG	M	Russia_Buryatia_M.SG	Dzhylinda-1	Russia	Siberian Federal District, Trans-Baikal, Buryatia, Dzhylinda site	55.6689	115.8721	C14	Beta-432255	7630	30	-6570	-6496	-6422	C5c	tooth	3	Shotgun	minus	ds	diploid	753834	1.214375	PRJEB39378	KilincSciAdv2021
+irk017.SG	F	Russia_LenaRiver_N.SG	irk017	Russia	Siberian Federal District, Cis-Baikal, Lena River, Makarovo site-1	54.003	105.7941	C14	Beta-432250	4460	30	-3337	-3179	-3021	D4j5	tooth	13	Shotgun	mixed	ds	diploid	862411	1.730183	PRJEB39378	KilincSciAdv2021
+irk022.SG	M	Russia_AngaraRiver_BA.SG	irk022	Russia	Siberian Federal District, Cis-Baikal, Angara River, Ust'-Dolgoe site	52.9943	103.4209	C14	Beta-453087	3840	30	-2455	-2328	-2201	D4b1c	tooth	7	Shotgun	mixed	ds	diploid	1144753	5.71873	PRJEB39378	KilincSciAdv2021
+irk025.SG	M	Russia_AngaraRiver_BA.SG	irk025	Russia	Siberian Federal District, Cis-Baikal, Angara River, Sukhaja Pad' Buret' site	52.9838	103.5207	C14	Beta-453088	3920	30	-2476	-2384	-2293	A	tooth	7	Shotgun	mixed	ds	diploid	1148694	7.770767	PRJEB39378	KilincSciAdv2021
+irk030.SG	M	Russia_LenaRiver_N.SG	irk030	Russia	Siberian Federal District, Cis-Baikal, Lena River, Korkino	54.3738	105.21	C14	Ua-62563	5202	34	-4215	-4084	-3953	A10	tooth	7	Shotgun	mixed	ds	diploid	1146967	6.422792	PRJEB39378	KilincSciAdv2021
+irk032.SG	M	Russia_AngaraRiver_Medieval.SG	irk032	Russia	Siberian Federal District, Cis-Baikal, Angara River, Zarubino site	57.4743	102.8364	C14	Beta-453089	660	30	1279	1336	1394	D6c	tooth	2	Shotgun	minus	ds	diploid	434744	0.461346	PRJEB39378	KilincSciAdv2021
+irk033.SG	M	Russia_AngaraRiver_N.SG	irk033	Russia	Siberian Federal District, Cis-Baikal, Angara River, Chastaja Padi	52.9892	103.4509	C14	Beta-453090	4290	30	-3011	-2944	-2876	C4a	tooth	2	Shotgun	minus	ds	diploid	523377	0.594295	PRJEB39378	KilincSciAdv2021
+irk034.SG	M	Russia_AngaraRiver_N.SG	irk034	Russia	Siberian Federal District, Cis-Baikal, Angara River, Kirpichnyj Saraj site	53.2207	103.3948	C14	Beta-453091	4790	30	-3639	-3582	-3525	D4j	tooth	7	Shotgun	mixed	ds	diploid	1115670	9.110035	PRJEB39378	KilincSciAdv2021
+irk036.SG	M	Russia_AngaraRiver_BA.SG	irk036	Russia	Siberian Federal District, Cis-Baikal, Angara River, Glazkovo site	52.2864	104.2601	C14	Beta-453092	4180	30	-2887	-2762	-2636	F1b1b	tooth	7	Shotgun	mixed	ds	diploid	1149073	8.640999	PRJEB39378	KilincSciAdv2021
+irk040.SG	M	Russia_AngaraRiver_N.SG	irk040	Russia	Siberian Federal District, Cis-Baikal, Angara River, Gorodische N 1	53.2207	103.3948	C14	Ua-62564	4846	33	-3705	-3616	-3528	A	tooth	3	Shotgun	plus	ds	diploid	1139760	4.856636	PRJEB39378	KilincSciAdv2021
+irk050.SG	F	Russia_AngaraRiver_BA.SG	Anosovo-1	Russia	Siberian Federal District, Cis-Baikal, Angara River, Anosovo N 1	54.6659	103.2322	C14	Beta-453096	3920	30	-2476	-2384	-2293	R1b	tooth	2	Shotgun	minus	ds	diploid	129174	0.116438	PRJEB39378	KilincSciAdv2021
+irk051.SG	F	Russia_AngaraRiver_EN.SG	Cyclodrome-1	Russia	Siberian Federal District, Cis-Baikal, Angara River, Cyclodrome site	52.2888	104.2526	C14	Beta-453097	7100	30	-6059	-5978	-5898	F1b	tooth	7	Shotgun	mixed	ds	diploid	1084456	2.886767	PRJEB39378	KilincSciAdv2021
+irk057.SG	M	Russia_AngaraRiver_BA.SG	irk057	Russia	Siberian Federal District, Cis-Baikal, Angara River, Podostrozhnoe N 3	53.2207	103.3948	C14	Beta-453098	3940	30	-2566	-2436	-2305	C4	tooth	2	Shotgun	minus	ds	diploid	101870	0.08989	PRJEB39378	KilincSciAdv2021
+irk061.SG	M	Russia_LenaRiver_BA.SG	irk061	Russia	Siberian Federal District, Cis-Baikal, Lena River, Zvjozdochka site	53.9695	105.8412	C14	Beta-453099	3910	30	-2470	-2382	-2295	D4j1	tooth	7	Shotgun	mixed	ds	diploid	1146357	6.169231	PRJEB39378	KilincSciAdv2021
+irk068.SG	M	Russia_LenaRiver_BA.SG	irk068	Russia	Siberian Federal District, Cis-Baikal, Lena River, Shishkino N 1	54.0066	105.6815	C14	Ua-63949	3992	30	-2577	-2519	-2461	F1b1b	tooth	7	Shotgun	mixed	ds	diploid	1139155	4.891296	PRJEB39378	KilincSciAdv2021
+irk071.SG	M	Russia_LakeBaikal_N.SG	irk071	Russia	Siberian Federal District, Cis-Baikal, Lake Baikal, Mys Uyuga site	53.1529	106.9598	C14	Beta-453101	4460	30	-3337	-3179	-3021	D4j	tooth	7	Shotgun	mixed	ds	diploid	1012206	2.116717	PRJEB39378	KilincSciAdv2021
+irk075.SG	M	Russia_LakeBaikal_N.SG	irk075	Russia	Siberian Federal District, Cis-Baikal, Lake Baikal, complex 1, Sokhter site	53.0189	106.7615	C14	Beta-453103	4670	30	-3519	-3444	-3370	D4j12	tooth	7	Shotgun	mixed	ds	diploid	1147687	6.630272	PRJEB39378	KilincSciAdv2021
+irk076.SG	M	Russia_LakeBaikal_BA.SG	irk076	Russia	Siberian Federal District, Cis-Baikal, Lake Baikal, Shamanka 2 site	51.6945	103.7048	C14	Beta-453104	3750	30	-2284	-2160	-2037	C4a2a1	tooth	2	Shotgun	minus	ds	diploid	65084	0.056638	PRJEB39378	KilincSciAdv2021
+irk078.SG	F	Russia_Chita_BA.SG	irk078	Russia	Siberian Federal District, Trans-Baikal, Chita Oblast, Okoshki-1	50.3172	118.2754	C14	Beta-453105	2950	30	-1260	-1156	-1051	M1	tooth	2	Shotgun	minus	ds	diploid	158702	0.14556	PRJEB39378	KilincSciAdv2021
+kra001.SG	M	Russia_Krasnoyarsk_BA.SG	kra001	Russia	Siberian Federal District, Krasnoyarsk Krai, Krasnoyarsk Krai, Nefteprovod-2 site	56.1947	95.8195	C14	Beta-453083	3790	30	-2340	-2202	-2064	C4b	tooth	7	Shotgun	mixed	ds	diploid	1149335	9.365816	PRJEB39378	KilincSciAdv2021
+mak026.SG	F	Russia_LenaRiver_N.SG	mak026	Russia	Siberian Federal District, Cis-Baikal, Lena River, Makrushyno site	53.8767	106.2674	C14	Beta-453110	4220	30	-2905	-2792	-2678	C4	bone (femur)	9	Shotgun	minus	ds	diploid	405726	0.425747	PRJEB39378	KilincSciAdv2021
+N2a.SG	F	Russia_LenaRiver_EN.SG	Matta-1	Russia	Far Eastern Federal District, Yakutia, Lena River, Matta lake burial	62.3557	130.6484	C14	Beta-422229	5940	30	-4903	-4812	-4721	F1d	bone (os cueniform)	6	Shotgun	minus	ds	diploid	54950	0.047685	PRJEB39378	KilincSciAdv2021
+N4a1.SG	M	Russia_CentralYakutia_LN.SG	N4a1	Russia	Far Eastern Federal District, Yakutia, Central Yakutia, Kyordyughen 2	62.0667	132.3336	C14	Beta-422227	4040	30	-2663	-2566	-2469	A12a	tooth	4	Shotgun	minus	ds	diploid	233448	0.22553	PRJEB39378	KilincSciAdv2021
+N4b2.SG	M	Russia_CentralYakutia_LN.SG	N4b2	Russia	Far Eastern Federal District, Yakutia, Central Yakutia, Kyordyughen 1	62.0667	132.3333	C14	Beta-422226	3810	30	-2401	-2271	-2141	A12a	tooth	9	Shotgun	mixed	ds	diploid	1109556	3.52336	PRJEB39378	KilincSciAdv2021
+N5a.SG	M	Russia_LenaRiver_MiddleN.SG	Onnyos-1	Russia	Far Eastern Federal District, Yakutia, Lena River, Onnyos burial	60.4583	131.0917	C14	Beta-422225	5420	30	-4343	-4260	-4176	D4b1c	tooth	n/a	Shotgun	n/a	ds	diploid	482122	0.529976	PRJEB39378	KilincSciAdv2021
+yak021.SG	F	Russia_KolymaRiver_LN.SG	yak021	Russia	Far Eastern Federal District, Yakutia, Kolyma River, Pomazkino site	67.9167	156.5	C14	Beta-453080	3020	30	-1391	-1260	-1130	C4b	tooth	2	Shotgun	minus	ds	diploid	579696	0.688763	PRJEB39378	KilincSciAdv2021
+yak022.SG	F	Russia_KolymaRiver_LN.SG	Kamenka-1	Russia	Far Eastern Federal District, Yakutia, Kolyma River, Kamenka 2	66.8	152.6333	C14	Beta-453081	3530	30	-1945	-1848	-1751	C4b	tooth	7	Shotgun	mixed	ds	diploid	1145830	5.988509	PRJEB39378	KilincSciAdv2021
+yak023.SG	F	Russia_KolymaRiver_LN_1d.rel.yak024.SG	Kamenka-2	Russia	Far Eastern Federal District, Yakutia, Kolyma River, Kamenka 2	66.8	152.6333	C14	Beta-453082	3460	30	-1882	-1786	-1689	C4b	tooth	2	Shotgun	minus	ds	diploid	414816	0.438076	PRJEB39378	KilincSciAdv2021
+yak024.SG	F	Russia_KolymaRiver_LN.SG	Kamenka-3	Russia	Far Eastern Federal District, Yakutia, Kolyma River, Kamenka 2	66.8	152.6333	contextual	n/a	n/a	n/a	-2000	-1550	-1100	C4b	petrous	7	Shotgun	mixed	ds	diploid	1140572	5.007651	PRJEB39378	KilincSciAdv2021
+yak025.SG	F	Russia_LenaRiver_LUP.SG	Khaiyrgas-1	Russia	Far Eastern Federal District, Yakutia, Lena River, Khaiyrgas Cave	59.95	117.4667	C14	Beta-453115	13790	30	-14990	-14796	-14602	R1b	tooth	17	Shotgun	minus	ds	diploid	267148	0.257871	PRJEB39378	KilincSciAdv2021
+yak030-b1e1l2p1.SG	M	Russia_CentralYakutia_IA.SG	yak030	Russia	Far Eastern Federal District, Yakutia, Central Yakutia, Dyupsya	63.0739	130.7369	C14	Beta-422228	2520	30	-789	-666	-544	C4b3	tooth	1	Shotgun	minus	ds	diploid	74979	0.065106	PRJEB39378	KilincSciAdv2021
