@@ -1,5 +1,5 @@
 poseidonVersion: 2.5.0
-title: 2020_Csaky_Ural
+title: CsakySciRep2020
 description: Early medieval genetic data from Ural region evaluated in the light of
   archaeological evidence of ancient Hungarians
 contributor:
@@ -9,13 +9,13 @@ packageVersion: 0.1.1
 lastModified: 2022-06-21
 genotypeData:
   format: PLINK
-  genoFile: 2020_Csaky_Ural.bed
+  genoFile: CsakySciRep2020.bed
   genoFileChkSum: 3cf230e5a16d73d3b0ee3a7f7dbab1f0
-  snpFile: 2020_Csaky_Ural.bim
+  snpFile: CsakySciRep2020.bim
   snpFileChkSum: 433fa85a23f3123bade02348e4628b75
-  indFile: 2020_Csaky_Ural.fam
+  indFile: CsakySciRep2020.fam
   indFileChkSum: 737cf9d5b31d43880beed0152fd38914
   snpSet: 1240K
-jannoFile: 2020_Csaky_Ural.janno
+jannoFile: CsakySciRep2020.janno
 jannoFileChkSum: 0002add281081aad18239b4768819126
 changelogFile: CHANGELOG.md
